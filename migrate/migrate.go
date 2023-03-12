@@ -13,5 +13,6 @@ func init() {
 func main() {
 	// 用來建立DB table的，需要另外執行這隻程式
 	initializers.DB.AutoMigrate(&models.Post{})
+	initializers.DB.AutoMigrate(&models.Student{})
 
 }
